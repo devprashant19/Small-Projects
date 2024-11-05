@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="mainalarm">
+            <div id="arrfirst">
+                <img id="arr1" class="arrow" src="arrow1.png" alt="" srcset="">
+                <img id="arr2" class="arrow" style="margin-left: 70px" src="arrow1.png" alt="" srcset="">
+            </div>
+            <div id="clocktext" class="txt">
+                <div id="hours" class="gap">00</div>
+                <div class="gap">:</div>
+                <div id="min" class="gap">00</div>
+            </div>
+            <div id="arrsec">
+                <img id="arr3" class="arrow" src="arrow2.png" alt="" srcset="">
+                <img id="arr4" class="arrow" style="margin-left: 70px" src="arrow2.png" alt="" srcset="">
+            </div>
+            <button type="button" id="bigbtn" class="btn btn1 btn-primary">Set Alarm</button>
+        </div>
+        <div class="head">
+            <h1 class="heading">Alarm Clock</h1>
+            <h3>Or you can enter the time manually here:</h2>
+            <h4 style="color: brown;">Hours: <input id="hrsinput" type="number" max="23" min="0">  Minutes : <input min="0" max="59" id="mininput" type="number">
+            <button type="button" id="smallbtn" class="btn btn1 btn-primary">Set Alarm</button></h3>
+            <hr>
+            <div class="boxlist">
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="ex8.js"></script>
+</body>
+</html>

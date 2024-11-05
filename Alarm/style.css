@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blueviolet !important;
+}
+.container{
+    background-color:rgb(219, 219, 219) ;
+    height:90vh;
+    width:70vw;
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+}
+.mainalarm{
+    height:100%;
+    width:40%;
+}
+.arrow{
+    height:20%;
+    width:30%;
+    margin-left: 10%;
+}
+.arrow:hover{
+    cursor: pointer;
+}
+#clocktext{
+    display:flex;
+    justify-content:center ;
+}
+.txt{
+    font-size: 500%;
+}
+.gap{
+    margin: 20px;
+}
+.btn1{
+    font-size: 30px !important;
+    margin: 5vh 0 0 13.5vh;
+    font-weight: 500 !important;
+    background-color: blueviolet !important;
+    border-color:blueviolet !important ;
+}
+.head{
+    height:80vh;
+    width:70vw;
+}
+#hrsinput{
+    text-align: center;
+    padding: 5px;
+    width:60px;
+    height:40px;
+    font-size: 25px;
+    border-radius: 20%;
+    color: blue !important;
+}
+#mininput{
+    border-radius: 20%;
+    text-align: center;
+    padding: 5px;
+    width:60px;
+    height:40px;
+    font-size: 25px;
+    color: blue !important;
+}
+#smallbtn{
+    margin:5px 0 15px 10px;
+    font-size: 17px !important;
+}
+.heading{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.boxlist{
+    display:flex;
+    flex-wrap: wrap;
+    width:55vw;
+    justify-content: center;
+    box-sizing: content-box;
+}
+.box{
+    color: white;
+    margin: 10px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px 5px;
+    height:20vh;
+    width:100px;
+    background-color: black;
+    border-radius: 20%;
+    border: 2px solid black;
+}
+.btn-danger{
+    padding: 2px 7px !important;
+    margin: 2px 0;
+}
