@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf Merger</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+        body {
+            background-color: rgb(30, 25, 25) !important;
+        }
+
+        #image1 {
+            height: 45px;
+            width: 40px;
+            margin: 0 10px 0 0;
+        }
+
+        .navbar {
+            padding: 10px 25px;
+            background-color: rgb(197, 6, 6) !important;
+        }
+
+        .navbar-brand {
+            padding: 10px 0 0 0;
+            color: beige !important;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .label {
+            padding: 2px;
+            background-color: rgb(30, 25, 25);
+            margin: 12px 20px 5px 20px;
+            border-radius: 2%;
+            width: 50vw;
+            height: 30px;
+            color: yellow;
+        }
+
+        .drop1 {
+            margin: 5px 20px;
+            background-color: yellow;
+            color: black;
+        }
+
+        .containermain {
+            display: flex;
+            height: 80vh;
+        }
+
+        .container {
+            margin: 30px 20px 10px 20px;
+            background-color: azure !important;
+            height: 100%;
+            width: 50%;
+            border-radius: 10%;
+        }
+
+        .head {
+            margin: 10px;
+            font-size: 5vh;
+            font-weight: bold;
+        }
+
+        .smallhead {
+            margin: 10px 30px;
+            font-size: 3vh;
+        }
+
+        .fileselector {
+            display: flex;
+            height: 27vh;
+            width: 42vw;
+        }
+
+        .inputfile {
+            height: 100%;
+            width: 100%;
+            margin: 10px 20px;
+            border-radius: 6%;
+            background-color: rgb(124, 124, 124);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        .inputfile:hover {
+            cursor: pointer;
+            background-color: rgb(68, 68, 67);
+        }
+
+        #file1,
+        #merge1 {
+            display: none;
+        }
+
+        .smallimg {
+            height: 10vh;
+            width: 5vw;
+            margin: 25px;
+        }
+
+        .buttoncont {
+            margin: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #num {
+            margin: 4px;
+            text-align: center;
+            padding: 10px;
+            height: 6vh;
+            width: 6vw;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img id="image1" src="https://www.freeiconspng.com/uploads/pdf-icon-png-pdf-zum-download-2.png" alt=""
+            srcset="">
+        <a class="navbar-brand" href="#">
+            <h4>Pdf Merger Pro</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <div class="label">
+                        <marquee behavior="" direction="left">Merge All Your Pdfs At One Place.... Try Our Different
+                            Options</marquee>
+                    </div>
+                </li>
+                <div class="btn-group">
+                    <button type="button" class="drop1 btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                        aria-expanded="false">All Features
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="http://localhost:3000/twomerge">Merge Two Pdfs Normally</a>
+                        <a class="dropdown-item" href="http://localhost:3000/specitwo">Merge Specific Page</a>
+                        <a class="dropdown-item" href="http://localhost:3000/multiple">Merge Multiple Pdfs</a>
+                        <a class="dropdown-item" href="http://localhost:3000/specione">Merge Specific Pages Of Single Pdf</a>
+                        <a class="dropdown-item" href="http://localhost:3000/multiboth">Merge Multiple Pages</a>
+                        <a class="dropdown-item" href="http://localhost:3000/range">Merge Specific Range Of Pages</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://instagram.com/_prashant__19">Contact Us</a>
+                    </div>
+                </div>
+        </div>
+    </nav>
+    <div class="containermain">
+        <div class="container">
+            <br>
+            <p class="head">Merge Multiple Pdfs</p>
+            <form action="/multiplepdf" method="post" enctype="multipart/form-data">
+                <p class="smallhead">Select two upto 10 files from your folders to merge them normally...</p>
+                <p class="smallhead">Enter the no. of files<input type="number" name="num" id="num"></p>
+                <div class="fileselector">
+                    <input type="file" multiple accept=".pdf" name="pdffiles" id="file1">
+                    <label class="inputfile" for="file1"><img class="smallimg"
+                            src="https://www.freepnglogos.com/uploads/plus-icon/plus-sign-clip-art-clkerm-vector-clip-art-online-11.png"><br>Choose
+                        file</label>
+                    <input id="merge1" type="submit" style="font-weight: bold;font-size: 3vh;" class="btn btn-warning"
+                        value="Merge">
+                </div>
+            </form>
+            <div class="buttoncont">
+                <label for="merge1" style="font-weight: bold;font-size: 3vh;" class="btn btn-warning">Merge</label>
+            </div>
+        </div>
+        <div class="container">
+            <br>
+            <p class="head">Try Our More Features</p><br>
+            <ul class="smallhead" style="font-size: 2.5vw;">
+                <li><a href="http://localhost:3000/twomerge">Merge Two Pdfs Normally</a></li>
+                <li><a href="http://localhost:3000/specitwo">Merge Specific Pages Of Two Pdf</a></li>
+                <li><a href="http://localhost:3000/multiple">Merge Multiple Pdfs</a></li>
+                <li><a href="http://localhost:3000/specione">Merge Specific Pages Of Single Pdf</a></li>
+                <li><a href="http://localhost:3000/multiboth">Merge Multiple Pages</a></li>
+                <li><a href="http://localhost:3000/range">Merge Specific Range Of Pages</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+</html>
