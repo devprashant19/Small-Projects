@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+body {
+    background-color: black;
+}
+
+.heading {
+    margin: 4vh 0;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 900;
+    font-size: 5em;
+    background: -webkit-linear-gradient(rgb(0, 229, 255), rgb(0, 64, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.todoinput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 4vw;
+    padding: 4vh;
+    border: 1px solid rgb(190, 189, 189);
+    background-color: rgb(190, 189, 189);
+    border-radius: 1vw;
+}
+
+#note {
+    width: 50vw;
+}
+
+#description {
+    width: 50vw;
+}
+
+.todohead {
+    margin: 2vh 10vw;
+    font-family: 'Oswald', sans-serif;
+    background: -webkit-linear-gradient(rgb(22, 168, 0),rgb(188, 122, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.calimg {
+    margin: 2vh 2vw;
+    height: 25vh;
+    width: 15vw;
+}
+.tablebody{
+    color:blanchedalmond;
+}
+#del:hover{
+    cursor: pointer;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.nil{
+    margin: 2vh 10vw;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
