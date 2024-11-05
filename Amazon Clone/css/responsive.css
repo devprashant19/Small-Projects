@@ -1,0 +1,60 @@
+@media only screen and (max-width:1068px){
+    .bottom-content{
+        display: none;
+    }
+    .bottom-info{
+        height:5%;
+        margin: 10px 0;
+    }
+    .bottom-one{
+        height:70vh;
+    }
+}
+@media only screen and (max-width:920px) {
+    .navbar {
+        height: 10vh;
+    }
+
+    .help-content {
+        font-size: 1.4vw;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .loc-none {
+        display: none;
+        width: 30%;
+    }
+    .navbar{
+        height:12vh;
+    }
+    .nav-list {
+        flex-direction: column-reverse;
+    }
+    .navleft{
+        width: 30%;
+    }
+    .navright{
+        width:60%;
+    }
+    .nav-h{
+        height:45vh;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+    .hamup{
+        transition-duration: 1s;
+        transition-timing-function:ease-in-out;
+        transition-property: all;
+        transform: translateY(-9vh);
+    }
+}
